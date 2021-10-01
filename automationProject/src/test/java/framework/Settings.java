@@ -17,7 +17,7 @@ public class Settings {
 			throw new RuntimeException(new Exception("There was a problem reading reading the file " + file + ": " + e.getMessage()));
 		}
 
-		settings.browserType = configFileProperties.get("BrowserType");
+		settings.browserType = configFileProperties.get("BrowserType").toLowerCase();
 	
 		return settings;
 	}
