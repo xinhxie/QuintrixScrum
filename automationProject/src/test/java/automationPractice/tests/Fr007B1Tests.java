@@ -10,13 +10,15 @@ public class Fr007B1Tests extends AutomationPracticeTestBase {
   @Test
 	public void CanclickBlouseProductPage(){
 	  
-	  	String expect = "Proceed to checkout";
-	  	new HomePage(this.getDriver(),baseUrl)
-				.clickBlouseProductPage()
+	  	String expected = "Proceed to checkout";
+	  	//String actual= 
+	  			new HomePage(this.getDriver(),baseUrl)
+				.clickBlouseImageJumpProductPage()
 				.clickAddedProduct();
+				//.getBloiseElementIntheCart();
 				
-		String actural = new BlouseProductPage(this.getDriver(),baseUrl ).getBloiseElementIntheCart();
-		
-		assertTrue(actural.equals(expect));
+		String actual = new BlouseProductPage(this.getDriver(),baseUrl ).getBloiseElementIntheCart();
+		System.out.println(actual);
+		assertTrue(actual.equals(expected));
 	}
 }
