@@ -30,16 +30,18 @@ public class checkoutPage extends PageObject{
 	}
 
 
-	public checkoutPage clickAgreeDelieveryAddress() {
-		//WebElement addProductElement = getbuttonAgreeAddressElement("getbuttonAgreeAddressElement");
-		clickTheProcessButton();
+	/*public checkoutPage clickAgreeDelieveryAddress() {
+		//WebElement addProductElement = driver.findElement(By.xpath("//lable[@for='cgv']"));
+		//addProductElement.click();
+		clickTheProcessButtonInaddress();
 		return new checkoutPage(this.driver, this.baseUrl);	
-	}
+	}*/
 
-	public checkoutPage clickAgreeDelieveryPolicy() {
+	public checkoutPage clickAgreeDelieveryPolicy() throws InterruptedException {
+		Thread.sleep(200);
 		WebElement addProductElement = getDelieveryPolicyButtonElement("iframe");
 		addProductElement.click();
-		clickTheProcessButton();
+		clickTheProcessButtonInaddress();
 		return new checkoutPage(this.driver, this.baseUrl);	
 	}
 
@@ -92,6 +94,16 @@ public class checkoutPage extends PageObject{
 		//WebElement clickProcesstoCheck =driver.findElement(By.xpath("//button[@class='button btn btn-default button-medium"));
 		//i[@class='icon-chevron-right right']
 		WebElement addProductElement = getCheckoutElement1("processAddress");
+
+		addProductElement.click();
+		return new checkoutPage(this.driver, this.baseUrl);
+
+	}
+	
+	public checkoutPage clickTheProcessButtonInaddress() {
+		//WebElement clickProcesstoCheck =driver.findElement(By.xpath("//button[@class='button btn btn-default button-medium"));
+		//i[@class='icon-chevron-right right']
+		WebElement addProductElement = getCheckoutElement1("processCarrier");
 
 		addProductElement.click();
 		return new checkoutPage(this.driver, this.baseUrl);

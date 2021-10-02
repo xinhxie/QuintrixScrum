@@ -9,7 +9,7 @@ import automationPractice.pageObjects.checkoutPage;
 public class Fr008B2 extends AutomationPracticeTestBase{
 	
   @Test
-  public void UserAbletoCompleteTheOrder() {
+  public void UserAbletoCompleteTheOrder() throws InterruptedException {
 	  
 	  new HomePage(this.getDriver(), baseUrl)
 	  .clickBlouseTitleJumpProductPage()
@@ -17,11 +17,12 @@ public class Fr008B2 extends AutomationPracticeTestBase{
 	  .clickTheProcessButton()
 	  .clickProcessCheckout() 
 	  .enterUsernameAndPassword()
-	  .clickAgreeDelieveryAddress()
+	  .clickTheProcessButton()
 	  .clickAgreeDelieveryPolicy()
 	  .clickPaybyBank()
 	  .clickConfirmMyOrder();
-	  	 
+	//  .clickAgreeDelieveryPolicy()
+	  	  	 
   }
 
   
