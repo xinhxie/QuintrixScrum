@@ -7,16 +7,17 @@ import automationPractice.pageObjects.HomePage;
 import static org.testng.Assert.assertTrue;
 
 public class Fr007B1Tests extends AutomationPracticeTestBase {
-  @Test
+	@Test
 	public void CanclickBlouseProductPage(){
-	  
-	  	String expect = "Proceed to checkout";
-	  	new HomePage(this.getDriver(),baseUrl)
-				.clickBlouseProductPage()
-				.clickAddedProduct();
-				
-		String actural = new BlouseProductPage(this.getDriver(),baseUrl ).getBloiseElementIntheCart();
-		
-		assertTrue(actural.equals(expect));
+
+		String expected = "Blouse";
+
+		new HomePage(this.getDriver(),baseUrl)
+		.clickBlouseImageJumpProductPage()
+		.clickAddedProduct();
+
+		String actual = new BlouseProductPage(this.getDriver(),baseUrl ).getBloiseElementIntheCart();
+
+		assertTrue(actual.equals(expected));
 	}
 }
