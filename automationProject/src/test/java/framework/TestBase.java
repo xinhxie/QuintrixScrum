@@ -30,7 +30,7 @@ public abstract class TestBase {
 	
 	@AfterTest
 	public void cleanup() {
-		this.manager.quitDriver();
+//		this.manager.quitDriver();
 	}
 	
 	public WebDriver getDriver() {
