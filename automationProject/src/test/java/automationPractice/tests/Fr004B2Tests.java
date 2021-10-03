@@ -6,6 +6,7 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 
 public class Fr004B2Tests extends AutomationPracticeTestBase{
+	
 	@Test
 	public void canClickProductTitleViewTheDetails() {
 		String expected = "Compositions Cotton\n"

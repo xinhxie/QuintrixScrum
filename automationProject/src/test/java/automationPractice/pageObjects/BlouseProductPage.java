@@ -1,7 +1,5 @@
 package automationPractice.pageObjects;
 
-import java.security.PublicKey;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import framework.PageObject;
 
 public class BlouseProductPage extends PageObject {
-	//String Uemail = "176914924@163.com";
-	//String Upassword="03060502a";
 
 	public BlouseProductPage(WebDriver driver, String baseUrl){
 		super(driver, baseUrl);
@@ -37,12 +33,7 @@ public class BlouseProductPage extends PageObject {
 
 		wait.until(ExpectedConditions.attributeToBe(By.xpath("//div[@id='layer_cart']"), "display", "block"));
 
-		//clickTheProcessButton();
-		/*WebElement clickProcesstoCheck =driver.findElement(By.xpath("//a[@title='Proceed to checkout']/span"));
-
-		clickProcesstoCheck.click();*/
-
-		return driver.findElement(By.xpath("//*[@id='product_2_7_0_0']/td[2]/p/a")).getText();	
+		return driver.findElement(By.id("layer_cart_product_title")).getText();	
 	}
 
 	public BlouseProductPage clickTheProcessButton() {
@@ -66,7 +57,6 @@ public class BlouseProductPage extends PageObject {
 		addProductElement.click();
 
 		return new checkoutPage(this.driver, this.baseUrl);
-
 	}
 
 	public WebElement getCheckoutElement(String checkElement) {
