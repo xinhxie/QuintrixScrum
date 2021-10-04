@@ -17,6 +17,10 @@ public class HomePage extends PageObject {
 	WebElement featuredTableElement;
 	@FindBy(id="layer_cart")
 	WebElement cartLayerElement;
+	@FindBy(id="search_query_top")
+	WebElement searchInputTextbox;
+	@FindBy(how=How.XPATH, using="//form[@id='searchbox']/button[@type='submit']")
+	WebElement searchButton;
 	@FindBy(how=How.XPATH, using="//a[@title='Proceed to checkout']")
 	private WebElement proceedToCheckoutElement;
 
@@ -60,5 +64,19 @@ public class HomePage extends PageObject {
 	public CheckoutPage clickProceedToCheckout() {
 		proceedToCheckoutElement.click();
 		return new CheckoutPage(this.driver, this.baseUrl);
+	}
+
+	public SearchResultPage search(String keyword) {
+		this.fillSearchTextbox(keyword);
+		this.clickSearchBottun();
+		return new SearchResultPage(this.driver, this.baseUrl, keyword);
+	}
+	
+	public void fillSearchTextbox(String keyword) {
+		this.searchInputTextbox.sendKeys(keyword);
+	}
+	
+	public void clickSearchBottun() {
+		this.searchButton.click();
 	}
 }
