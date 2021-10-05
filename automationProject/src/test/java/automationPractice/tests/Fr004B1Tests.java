@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import automationPractice.controlExtension.ProductItem;
 import automationPractice.foundation.AutomationPracticeTestBase;
+
 import automationPractice.pageObjects.CheckoutPage;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.LoginPage;
