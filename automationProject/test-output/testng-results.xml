@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-03T18:14:58 EDT" name="Default suite" finished-at="2021-10-03T18:15:06 EDT" duration-ms="8169">
+  <suite started-at="2021-10-05T20:38:51 EDT" name="Default suite" finished-at="2021-10-05T20:39:46 EDT" duration-ms="54912">
     <groups>
     </groups>
-    <test started-at="2021-10-03T18:14:58 EDT" name="Default test" finished-at="2021-10-03T18:15:06 EDT" duration-ms="8169">
-      <class name="automationPractice.tests.Fr004B1Tests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-03T18:14:58 EDT" name="setup" finished-at="2021-10-03T18:15:01 EDT" duration-ms="3238" status="PASS">
+    <test started-at="2021-10-05T20:38:51 EDT" name="Default test" finished-at="2021-10-05T20:39:46 EDT" duration-ms="54912">
+      <class name="automationPractice.tests.Fr008B2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr008B2@306f16f3]" started-at="2021-10-05T20:38:51 EDT" name="setup" finished-at="2021-10-05T20:39:05 EDT" duration-ms="13940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="wind16CanAddProductToWishlist()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-03T18:15:01 EDT" name="wind16CanAddProductToWishlist" finished-at="2021-10-03T18:15:06 EDT" duration-ms="4899" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="UserAbletoCompleteTheOrder()[pri:0, instance:automationPractice.tests.Fr008B2@306f16f3]" started-at="2021-10-05T20:39:05 EDT" name="UserAbletoCompleteTheOrder" finished-at="2021-10-05T20:39:45 EDT" duration-ms="40362" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=93.0.4577.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SC-201909300102', ip: '192.168.202.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd23c24b140404445a43967428e06e9a
+*** Element info: {Using=xpath, value=//button[@name='processAddress']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at automationPractice.tests.Fr004B1Tests.wind16CanAddProductToWishlist(Fr004B1Tests.java:67)
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=93.0.4577.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SC-201909300102', ip: '192.168.202.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd23c24b140404445a43967428e06e9a
+*** Element info: {Using=xpath, value=//button[@name='processAddress']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at automationPractice.pageObjects.CheckoutPage.getCheckoutElement1(CheckoutPage.java:97)
+at automationPractice.pageObjects.CheckoutPage.clickTheProcessButton(CheckoutPage.java:80)
+at automationPractice.tests.Fr008B2.UserAbletoCompleteTheOrder(Fr008B2.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,15 +80,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wind16CanAddProductToWishlist -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-03T18:15:06 EDT" name="cleanup" finished-at="2021-10-03T18:15:06 EDT" duration-ms="1" status="PASS">
+        </test-method> <!-- UserAbletoCompleteTheOrder -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr008B2@306f16f3]" started-at="2021-10-05T20:39:45 EDT" name="cleanup" finished-at="2021-10-05T20:39:46 EDT" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-      </class> <!-- automationPractice.tests.Fr004B1Tests -->
+      </class> <!-- automationPractice.tests.Fr008B2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
