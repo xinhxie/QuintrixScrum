@@ -1,10 +1,7 @@
 package automationPractice.tests;
 
-import static org.testng.Assert.assertTrue;
-
 import org.testng.annotations.Test;
 import automationPractice.foundation.AutomationPracticeTestBase;
-import automationPractice.pageObjects.BlouseProductPage;
 import org.testng.Assert;
 import automationPractice.controlExtension.ProductItem;
 import automationPractice.pageObjects.CheckoutPage;

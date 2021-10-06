@@ -8,7 +8,7 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.CheckoutPage;
 
-public class Fr008B2 extends AutomationPracticeTestBase{
+public class Fr008B2Tests extends AutomationPracticeTestBase{
 
 	@Test
 	public void UserAbletoCompleteTheOrder() throws InterruptedException {

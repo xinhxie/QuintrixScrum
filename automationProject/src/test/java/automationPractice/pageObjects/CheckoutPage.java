@@ -3,6 +3,8 @@ package automationPractice.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 import framework.PageObject;
 
 public class CheckoutPage extends PageObject{
@@ -10,7 +12,8 @@ public class CheckoutPage extends PageObject{
 	String Upassword="03060502a";
 	public CheckoutPage(WebDriver driver, String baseUrl) {
 		super(driver, baseUrl);
-	}	
+		this.subUrl = "/index.php?controller=order";
+	}
 
 
 	public CheckoutPage enterUsernameAndPassword() {
@@ -36,18 +39,18 @@ public class CheckoutPage extends PageObject{
 
 	public CheckoutPage clickPaybyBank() {
 		WebElement addProductElement = getBankElement("bankwire");
-		
+
 		addProductElement.click();
 
 		return new CheckoutPage(this.driver, this.baseUrl);	
 	}
 
 	public CheckoutPage clickConfirmMyOrder() {
-		
+
 		WebElement addProductElement = driver.findElement(By.xpath("//button[@class ='button btn btn-default button-medium']"));
-		
+
 		addProductElement.click();
-		
+
 		return new CheckoutPage(this.driver, this.baseUrl);	
 	}
 
@@ -62,7 +65,7 @@ public class CheckoutPage extends PageObject{
 	public WebElement getBankElement(String BankElement) {
 		return driver.findElement(By.xpath("//a[@class='"+ BankElement +"']"));
 	}
-	
+
 	public WebElement getConfirmOrderButtonElement(String confirmOrderButtonElement) {
 		return driver.findElement(By.xpath("//i[@class='"+ confirmOrderButtonElement +"']"));
 	}
@@ -80,7 +83,7 @@ public class CheckoutPage extends PageObject{
 		WebElement addProductElement = getCheckoutElement1("processAddress");
 
 		addProductElement.click();
-		
+
 		return new CheckoutPage(this.driver, this.baseUrl);
 	}
 
@@ -89,7 +92,7 @@ public class CheckoutPage extends PageObject{
 		WebElement addProductElement = getCheckoutElement1("processCarrier");
 
 		addProductElement.click();
-		
+
 		return new CheckoutPage(this.driver, this.baseUrl);
 	}
 
@@ -100,5 +103,14 @@ public class CheckoutPage extends PageObject{
 
 	public String getOrderInformation() {
 		return driver.findElement(By.xpath("//p[@class='cheque-indent']")).getText();
+	}
+
+	@FindBy(id="summary_products_quantity")
+	WebElement productQuantityElement;
+
+	public int getProductQuantity() {
+		String text = this.productQuantityElement.getText();
+		int quantity = Integer.valueOf(text.split(" ", 2)[0]);
+		return quantity;
 	}
 }
