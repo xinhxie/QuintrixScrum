@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-04T21:32:45 EDT" name="Default suite" finished-at="2021-10-04T21:32:58 EDT" duration-ms="12479">
+    <groups>
+    </groups>
+    <test started-at="2021-10-04T21:32:45 EDT" name="Default test" finished-at="2021-10-04T21:32:58 EDT" duration-ms="12479">
+      <class name="automationPractice.tests.Fr004B1Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-04T21:32:45 EDT" name="setup" finished-at="2021-10-04T21:32:52 EDT" duration-ms="6602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="wind16CanAddProductToCart()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-04T21:32:52 EDT" name="wind16CanAddProductToCart" finished-at="2021-10-04T21:32:58 EDT" duration-ms="5829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wind16CanAddProductToCart -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@19bb07ed]" started-at="2021-10-04T21:32:58 EDT" name="cleanup" finished-at="2021-10-04T21:32:58 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- automationPractice.tests.Fr004B1Tests -->
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-30T19:30:18 PDT" name="Default suite" finished-at="2021-09-30T19:30:43 PDT" duration-ms="25178">
+    <groups>
+    </groups>
+    <test started-at="2021-09-30T19:30:18 PDT" name="Default test" finished-at="2021-09-30T19:30:43 PDT" duration-ms="25178">
+      <class name="automationPractice.tests.Fr007B4Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr007B4Test@3aefe5e5]" started-at="2021-09-30T19:30:18 PDT" name="setup" finished-at="2021-09-30T19:30:29 PDT" duration-ms="11278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getToCheckOut()[pri:0, instance:automationPractice.tests.Fr007B4Test@3aefe5e5]" started-at="2021-09-30T19:30:29 PDT" name="getToCheckOut" finished-at="2021-09-30T19:30:43 PDT" duration-ms="13872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToCheckOut -->
+      </class> <!-- automationPractice.tests.Fr007B4Test -->
+>>>>>>> e3441f80ba3c5f32e8eec6bf061c7482a75769b1
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
