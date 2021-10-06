@@ -1,5 +1,10 @@
 package automationPractice.tests;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.Test;
+import automationPractice.foundation.AutomationPracticeTestBase;
+import automationPractice.pageObjects.BlouseProductPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +18,7 @@ import automationPractice.pageObjects.ProductDetailsPage;
 import automationPractice.pageObjects.WishlistPage;
 
 public class Fr004B1Tests extends AutomationPracticeTestBase{
+
 	@Test
 	public void wind16CanAddProductToCart() {
 		int itemIndex = 1;

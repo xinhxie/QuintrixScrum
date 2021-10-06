@@ -3,6 +3,7 @@ package automationPractice.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import automationPractice.controlExtension.FeaturedTable;
 import automationPractice.controlExtension.ProductItem;
+
 import framework.PageObject;
 
 public class HomePage extends PageObject {
@@ -29,6 +31,33 @@ public class HomePage extends PageObject {
 		super(driver, baseUrl);
 	}
 
+	public BlouseProductPage clickBlouseImageJumpProductPage(){
+
+		WebElement BlouseProductElement = getBlouseImageElement("Blouse");
+
+		BlouseProductElement.click();
+
+		return new BlouseProductPage(this.driver, this.baseUrl);	
+	}
+
+	public BlouseProductPage clickBlouseTitleJumpProductPage(){
+
+		WebElement BlouseProductElement = getBlouseTitleElement("Blouse");
+
+		BlouseProductElement.click();
+
+		return new BlouseProductPage(this.driver, this.baseUrl);	
+	}
+
+	public WebElement getBlouseImageElement(String BlouseImageElement) {
+
+		return driver.findElement(By.xpath("//img[@title='"+ BlouseImageElement +"']"));
+	}
+
+	public WebElement getBlouseTitleElement(String BlouseTitleElement) {
+
+		return driver.findElement(By.xpath("//a[@class='product-name' and @title='"+BlouseTitleElement+"']"));
+  }
 	public ProductItem getProductItem(int itemIndex) {
 		FeaturedTable table = new FeaturedTable(featuredTableElement);
 //		ProductItem product = table.getProductItem(itemIndex);
