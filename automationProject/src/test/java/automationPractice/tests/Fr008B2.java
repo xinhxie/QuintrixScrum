@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
-import automationPractice.pageObjects.checkoutPage;
+import automationPractice.pageObjects.CheckoutPage;
 
 public class Fr008B2 extends AutomationPracticeTestBase{
 
@@ -25,7 +25,7 @@ public class Fr008B2 extends AutomationPracticeTestBase{
 		.clickPaybyBank()
 		.clickConfirmMyOrder();
 
-		String actualOrderInformation= new checkoutPage(this.getDriver(), baseUrl).getOrderInformation();
+		String actualOrderInformation= new CheckoutPage(this.getDriver(), baseUrl).getOrderInformation();
 		assertEquals(actualOrderInformation, expectedOrderInformation);	  	  	 
 	}
 

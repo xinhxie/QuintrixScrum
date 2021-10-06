@@ -50,13 +50,13 @@ public class BlouseProductPage extends PageObject {
 		return driver.findElement(By.xpath("//table")).getText();
 	}
 
-	public checkoutPage clickProcessCheckout() {
+	public CheckoutPage clickProcessCheckout() {
 
 		WebElement addProductElement = getCheckoutElement("button btn btn-default standard-checkout button-medium");
 
 		addProductElement.click();
 
-		return new checkoutPage(this.driver, this.baseUrl);
+		return new CheckoutPage(this.driver, this.baseUrl);
 	}
 
 	public WebElement getCheckoutElement(String checkElement) {
