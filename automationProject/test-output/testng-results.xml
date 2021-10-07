@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-05T19:35:02 PDT" name="Default suite" finished-at="2021-10-05T19:35:57 PDT" duration-ms="54950">
+  <suite started-at="2021-10-05T21:41:35 EDT" name="Default suite" finished-at="2021-10-05T21:41:57 EDT" duration-ms="22017">
     <groups>
     </groups>
-    <test started-at="2021-10-05T19:35:02 PDT" name="Default test" finished-at="2021-10-05T19:35:57 PDT" duration-ms="54950">
-      <class name="automationPractice.tests.Fr008B3Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr008B3Test@149e0f5d]" started-at="2021-10-05T19:35:02 PDT" name="setup" finished-at="2021-10-05T19:35:15 PDT" duration-ms="12294" status="PASS">
+    <test started-at="2021-10-05T21:41:35 EDT" name="Default test" finished-at="2021-10-05T21:41:57 EDT" duration-ms="22017">
+      <class name="automationPractice.tests.Fr005B6Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:35 EDT" name="setup" finished-at="2021-10-05T21:41:46 EDT" duration-ms="10586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBillingRequirments()[pri:0, instance:automationPractice.tests.Fr008B3Test@149e0f5d]" started-at="2021-10-05T19:35:15 PDT" name="testBillingRequirments" finished-at="2021-10-05T19:35:57 PDT" duration-ms="41999" status="PASS">
+        <test-method signature="wind33NotAbleToAddToWishlishBeforeLogin()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:46 EDT" name="wind33NotAbleToAddToWishlishBeforeLogin" finished-at="2021-10-05T21:41:56 EDT" duration-ms="10746" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBillingRequirments -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr008B3Test@149e0f5d]" started-at="2021-10-05T19:35:57 PDT" name="cleanup" finished-at="2021-10-05T19:35:57 PDT" duration-ms="630" status="PASS">
+        </test-method> <!-- wind33NotAbleToAddToWishlishBeforeLogin -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:56 EDT" name="cleanup" finished-at="2021-10-05T21:41:57 EDT" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-      </class> <!-- automationPractice.tests.Fr008B3Test -->
+      </class> <!-- automationPractice.tests.Fr005B6Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
