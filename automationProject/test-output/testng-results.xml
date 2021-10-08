@@ -2,15 +2,26 @@
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-10-07T17:10:49 PDT" name="Default suite" finished-at="2021-10-07T17:11:07 PDT" duration-ms="18150">
+=======
+  <suite started-at="2021-10-07T20:05:34 EDT" name="Default suite" finished-at="2021-10-07T20:05:41 EDT" duration-ms="6540">
+>>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-10-07T17:10:49 PDT" name="Default test" finished-at="2021-10-07T17:11:07 PDT" duration-ms="18150">
       <class name="automationPractice.tests.Fr004B1Tests">
         <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@7880cdf3]" started-at="2021-10-07T17:10:49 PDT" name="setup" finished-at="2021-10-07T17:10:54 PDT" duration-ms="5472" status="PASS">
+=======
+    <test started-at="2021-10-07T20:05:34 EDT" name="Default test" finished-at="2021-10-07T20:05:41 EDT" duration-ms="6540">
+      <class name="automationPractice.tests.Fr005B6Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:34 EDT" name="setup" finished-at="2021-10-07T20:05:38 EDT" duration-ms="3488" status="PASS">
+>>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method signature="wind16CanAddProductToWishlist()[pri:0, instance:automationPractice.tests.Fr004B1Tests@7880cdf3]" started-at="2021-10-07T17:10:54 PDT" name="wind16CanAddProductToWishlist" finished-at="2021-10-07T17:11:06 PDT" duration-ms="12009" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -82,10 +93,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="wind33NotAbleToAddToWishlishBeforeLogin()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:38 EDT" name="wind33NotAbleToAddToWishlishBeforeLogin" finished-at="2021-10-07T20:05:40 EDT" duration-ms="2335" status="PASS">
+>>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- wind16CanAddProductToWishlist -->
         <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr004B1Tests@7880cdf3]" started-at="2021-10-07T17:11:06 PDT" name="cleanup" finished-at="2021-10-07T17:11:07 PDT" duration-ms="639" status="PASS">
+=======
+        </test-method> <!-- wind33NotAbleToAddToWishlishBeforeLogin -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:40 EDT" name="cleanup" finished-at="2021-10-07T20:05:41 EDT" duration-ms="682" status="PASS">
+>>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->

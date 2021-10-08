@@ -42,6 +42,9 @@ public class ProductDetailsPage extends PageObject {
 		if (elements.size() != 0) {
 			return elements.get(0);
 		}
+		
 		return null;
 	}
 }
+
+
