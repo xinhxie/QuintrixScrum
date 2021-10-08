@@ -2,47 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-10-05T21:14:24 EDT" name="Default suite" finished-at="2021-10-05T21:14:59 EDT" duration-ms="35233">
-=======
-  <suite started-at="2021-10-05T21:41:35 EDT" name="Default suite" finished-at="2021-10-05T21:41:57 EDT" duration-ms="22017">
->>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum.git
+  <suite started-at="2021-10-07T20:05:34 EDT" name="Default suite" finished-at="2021-10-07T20:05:41 EDT" duration-ms="6540">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-10-05T21:14:24 EDT" name="Default test" finished-at="2021-10-05T21:14:59 EDT" duration-ms="35233">
-      <class name="automationPractice.tests.Fr007B4Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr007B4Test@306f16f3]" started-at="2021-10-05T21:14:24 EDT" name="setup" finished-at="2021-10-05T21:14:38 EDT" duration-ms="14268" status="PASS">
-=======
-    <test started-at="2021-10-05T21:41:35 EDT" name="Default test" finished-at="2021-10-05T21:41:57 EDT" duration-ms="22017">
+    <test started-at="2021-10-07T20:05:34 EDT" name="Default test" finished-at="2021-10-07T20:05:41 EDT" duration-ms="6540">
       <class name="automationPractice.tests.Fr005B6Tests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:35 EDT" name="setup" finished-at="2021-10-05T21:41:46 EDT" duration-ms="10586" status="PASS">
->>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum.git
+        <test-method is-config="true" signature="setup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:34 EDT" name="setup" finished-at="2021-10-07T20:05:38 EDT" duration-ms="3488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-<<<<<<< HEAD
-        <test-method signature="getToCheckOut()[pri:0, instance:automationPractice.tests.Fr007B4Test@306f16f3]" started-at="2021-10-05T21:14:38 EDT" name="getToCheckOut" finished-at="2021-10-05T21:14:58 EDT" duration-ms="20274" status="PASS">
-=======
-        <test-method signature="wind33NotAbleToAddToWishlishBeforeLogin()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:46 EDT" name="wind33NotAbleToAddToWishlishBeforeLogin" finished-at="2021-10-05T21:41:56 EDT" duration-ms="10746" status="PASS">
->>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum.git
+        <test-method signature="wind33NotAbleToAddToWishlishBeforeLogin()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:38 EDT" name="wind33NotAbleToAddToWishlishBeforeLogin" finished-at="2021-10-07T20:05:40 EDT" duration-ms="2335" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- getToCheckOut -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr007B4Test@306f16f3]" started-at="2021-10-05T21:14:58 EDT" name="cleanup" finished-at="2021-10-05T21:14:59 EDT" duration-ms="661" status="PASS">
-=======
         </test-method> <!-- wind33NotAbleToAddToWishlishBeforeLogin -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@4b0b0854]" started-at="2021-10-05T21:41:56 EDT" name="cleanup" finished-at="2021-10-05T21:41:57 EDT" duration-ms="658" status="PASS">
->>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum.git
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:automationPractice.tests.Fr005B6Tests@306f16f3]" started-at="2021-10-07T20:05:40 EDT" name="cleanup" finished-at="2021-10-07T20:05:41 EDT" duration-ms="682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-<<<<<<< HEAD
-      </class> <!-- automationPractice.tests.Fr007B4Test -->
-=======
       </class> <!-- automationPractice.tests.Fr005B6Tests -->
->>>>>>> branch 'feature/f-sprint2' of https://github.com/xinhxie/QuintrixScrum.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
