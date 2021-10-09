@@ -1,0 +1,34 @@
+Team Wind Srpint 2 Retrospective
+
+Velocity comparison
+1: 59/59
+2: 17/17
+
+Xinhang Xie
++ resolved merge conflicts rather quickly
++ good communication, we asked each other for help for jenkins setup
++ we took on tasks that were related to what we did in sprint 1, assigned tasks to the right person
+
+- we shouldve asked dennis for help more often when he was available
+- we shouldve pulled more often from repo to make sure everybody was on the same page
+- should've only worked during meetings so we can have an estimate on how much story points can be completed in a sprint
+
+Oscar L Correa
++ moved quickly, straight to point
++ task assigned to right merson
+
+- merge conflicts took time to resolve
+
+Wenlong Wang
++ good communication
++ helped each other in jenkins setup
+
+- spend a lot of time in jenkins setup and create maven project
+- should pull from repo before merge
+
+Action Items
+	Asking for help when available
+	Remedy: use resources (ex. tech lead) more efficiently
+
+	Merge conflicts took time to resolve
+	Remedy: push early and more often to reduce merge conflicts
