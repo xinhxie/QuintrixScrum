@@ -16,11 +16,10 @@ public class SignInPage extends PageObject{
 	WebElement userPassword = driver.findElement(By.xpath("//input[@id = 'passwd']"));
 	WebElement SignInBtn = driver.findElement(By.xpath("//button[@id = 'SubmitLogin']"));
 	
-	public AccountMainPage SignIn() {
+	public void SignIn() {
 		userEmail.sendKeys("oballing88@gmail.com");
 		userPassword.sendKeys("password");
 		SignInBtn.click();
-		return new AccountMainPage(driver, baseUrl);
 	}
 
 }

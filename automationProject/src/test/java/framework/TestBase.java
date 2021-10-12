@@ -3,7 +3,9 @@ package framework;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import framework.webDriverFactory.*;
@@ -18,7 +20,7 @@ public abstract class TestBase {
 		this.settings = Settings.get();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() {
 		this.manager = DriverManagerFactory.getManager(settings.browserType);
 		this.manager.createDriver();
@@ -28,7 +30,7 @@ public abstract class TestBase {
 		this.getDriver().navigate().to(this.baseUrl);		
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void cleanup() {
 		this.manager.quitDriver();
 	}

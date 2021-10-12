@@ -112,16 +112,16 @@ public class HomePage extends PageObject {
 	
 	private WebElement elementItem = 
 			driver.findElement(By.xpath("//a[@title = 'Faded Short Sleeve T-shirts']"));
-	private WebElement signInBtn = 
-			driver.findElement(By.xpath("//a[@title = 'Log in to your customer account']"));
+	private WebElement signInBtn;
 	
 	public FadedShirtPage ClickProduct() {
 		elementItem.click();
-		return new FadedShirtPage(driver, baseUrl);
+		return new FadedShirtPage(this.driver, baseUrl);
 	}
 
 	public SignInPage ClickSignIn() {
+		signInBtn = driver.findElement(By.xpath("//a[@title = 'Log in to your customer account']"));
 		signInBtn.click();
-		return new SignInPage(driver, baseUrl);
+		return new SignInPage(this.driver, baseUrl);
 	}
 }

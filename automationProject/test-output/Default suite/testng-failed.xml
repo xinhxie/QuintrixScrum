@@ -3,13 +3,72 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationPractice.tests.Fr008B2">
+      <class name="automationPractice.tests.Fr005B6Tests">
+        <methods>
+          <include name="cleanup"/>
+          <include name="wind33NotAbleToAddToWishlishBeforeLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr005B6Tests -->
+      <class name="automationPractice.tests.Fr008B3Test">
+        <methods>
+          <include name="testBillingRequirments"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr008B3Test -->
+      <class name="automationPractice.tests.Fr007B1Tests">
+        <methods>
+          <include name="CanclickBlouseProductPage"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr007B1Tests -->
+      <class name="automationPractice.tests.Fr001B1Test">
+        <methods>
+          <include name="cleanup"/>
+          <include name="SignInExsistingUser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr001B1Test -->
+      <class name="automationPractice.tests.Fr004B1Tests">
+        <methods>
+          <include name="wind16CanAddProductToCart"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+          <include name="wind16CanAddProductToWishlist"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr004B1Tests -->
+      <class name="automationPractice.tests.Fr003B1B1Tests">
+        <methods>
+          <include name="wind7CanSearchByInvalidKeyword"/>
+          <include name="wind7CanSearchByValidKeyword"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+          <include name="wind7CanSortByNameAsc"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr003B1B1Tests -->
+      <class name="automationPractice.tests.Fr008B2Tests">
         <methods>
           <include name="cleanup"/>
           <include name="UserAbletoCompleteTheOrder"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- automationPractice.tests.Fr008B2 -->
+      </class> <!-- automationPractice.tests.Fr008B2Tests -->
+      <class name="automationPractice.tests.Fr007B4Test">
+        <methods>
+          <include name="getToCheckOut"/>
+          <include name="cleanup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr007B4Test -->
+      <class name="automationPractice.tests.Fr004B2Tests">
+        <methods>
+          <include name="cleanup"/>
+          <include name="setup"/>
+          <include name="canClickProductTitleViewTheDetails"/>
+        </methods>
+      </class> <!-- automationPractice.tests.Fr004B2Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

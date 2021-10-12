@@ -1,5 +1,7 @@
 package automationPractice.pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,6 +33,18 @@ public class ProductDetailsPage extends PageObject {
 
 	public void waitToAddToWishlist() {
 		WebDriverWait wait = new WebDriverWait(this.driver, WAIT_ADD_TO_WISHLIST_TIMEOUT);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//p[text()='Added to your wishlist.']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'fancybox-opened')]")));
+	}
+
+	public WebElement getAddToWishlistError() {
+		String selector = "//p[@class='fancybox-error']";
+		List<WebElement> elements = this.driver.findElements(By.xpath(selector));
+		if (elements.size() != 0) {
+			return elements.get(0);
+		}
+		
+		return null;
 	}
 }
+
+
