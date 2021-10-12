@@ -8,10 +8,10 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.ShoppingCartPage;
 
-public class Fr007B4Test extends AutomationPracticeTestBase {
+public class Checkout extends AutomationPracticeTestBase {
 	
   @Test
-  public void getToCheckOut() {
+  public void wind13getToCheckOut() {
 			String expectedHref = "http://automationpractice.com/index.php?id_product=1&controller=product#/size-s/color-orange";
 			
 			

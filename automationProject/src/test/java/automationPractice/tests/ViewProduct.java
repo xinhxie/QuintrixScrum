@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 
-public class Fr004B2Tests extends AutomationPracticeTestBase{
+public class ViewProduct extends AutomationPracticeTestBase{
 	
 	@Test
-	public void canClickProductTitleViewTheDetails() {
+	public void wind17canClickProductTitleViewTheDetails() {
 		String expected = "Compositions Cotton\n"
 				+ "Styles Casual\n"
 				+ "Properties Short Sleeve";
@@ -20,7 +20,7 @@ public class Fr004B2Tests extends AutomationPracticeTestBase{
 	}
 
 	@Test
-	public void canClickProductImageViewTheDetails() {
+	public void wind17canClickProductImageViewTheDetails() {
 		String expected = "Compositions Cotton\n"
 				+ "Styles Casual\n"
 				+ "Properties Short Sleeve";

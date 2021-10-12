@@ -8,7 +8,7 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.SearchResultPage;
 
-public class Fr003B1B1Tests extends AutomationPracticeTestBase{
+public class SearchProduct extends AutomationPracticeTestBase{
   @Test
   public void wind7CanSearchByValidKeyword() {
 	  

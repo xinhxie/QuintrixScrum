@@ -1,12 +1,15 @@
 package framework;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
 import framework.webDriverFactory.*;
 
@@ -31,7 +34,26 @@ public abstract class TestBase {
 	}
 	
 	@AfterMethod
-	public void cleanup() {
+	public void tearDown(ITestResult result)
+	{
+		if(ITestResult.FAILURE==result.getStatus())
+		{
+			try 
+			{
+				TakesScreenshot ts=(TakesScreenshot)this.getDriver();
+				File source=ts.getScreenshotAs(OutputType.FILE);
+				try{
+					FileHandler.copy(source, new File("./Screenshots/"+result.getName()+".png"));
+					System.out.println("Screenshot taken");
+				} 
+				catch (Exception e)
+				{
+					System.out.println("Exception while taking screenshot "+e.getMessage());
+				} 
+			} finally {
+				this.manager.quitDriver();
+			}
+		}
 		this.manager.quitDriver();
 	}
 	

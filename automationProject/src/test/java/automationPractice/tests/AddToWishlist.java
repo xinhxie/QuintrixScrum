@@ -9,7 +9,7 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.ProductDetailsPage;
 
-public class Fr005B6Tests extends AutomationPracticeTestBase{
+public class AddToWishlist extends AutomationPracticeTestBase{
   @Test
   public void wind33NotAbleToAddToWishlishBeforeLogin() {	  
 		int itemIndex = 1;

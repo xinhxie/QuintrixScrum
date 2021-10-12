@@ -6,10 +6,10 @@ import automationPractice.pageObjects.BlouseProductPage;
 import automationPractice.pageObjects.HomePage;
 import static org.testng.Assert.assertTrue;
 
-public class Fr007B1Tests extends AutomationPracticeTestBase {
+public class AddProduct2 extends AutomationPracticeTestBase {
 
 	@Test
-	public void CanclickBlouseProductPage(){
+	public void wind14CanclickBlouseProductPage(){
 
 		String expected = "Blouse";
 

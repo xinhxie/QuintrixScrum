@@ -7,10 +7,11 @@ import org.testng.annotations.Test;
 import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 
-public class Fr001B1Test extends AutomationPracticeTestBase{
+public class SignIn extends AutomationPracticeTestBase{
 	
   @Test
-  public void SignInExsistingUser() {
+  public void wind3SignInExsistingUser()
+  {
 	  	String expectedUrl = "http://automationpractice.com/index.php?controller=my-account";
 		
 		

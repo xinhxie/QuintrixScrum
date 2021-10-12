@@ -10,7 +10,7 @@ import automationPractice.pageObjects.LoginPage;
 import automationPractice.pageObjects.ProductDetailsPage;
 import automationPractice.pageObjects.WishlistPage;
 
-public class Fr004B1Tests extends AutomationPracticeTestBase{
+public class AddProducts extends AutomationPracticeTestBase{
 
 	@Test
 	public void wind16CanAddProductToCart() {

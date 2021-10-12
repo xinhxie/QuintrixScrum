@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 
-public class Fr008B3Test extends AutomationPracticeTestBase{
+public class Purchase2 extends AutomationPracticeTestBase{
 	
   @Test
-  public void testBillingRequirments() {
+  public void wind11TestBillingRequirments() {
 	  String expectedUrl = "http://automationpractice.com/index.php?controller=order&step=1&multi-shipping=0";
 	  
 	  new HomePage(this.getDriver(), baseUrl)

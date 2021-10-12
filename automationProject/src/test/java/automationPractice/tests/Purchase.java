@@ -8,10 +8,10 @@ import automationPractice.foundation.AutomationPracticeTestBase;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.CheckoutPage;
 
-public class Fr008B2Tests extends AutomationPracticeTestBase{
+public class Purchase extends AutomationPracticeTestBase{
 
 	@Test
-	public void UserAbletoCompleteTheOrder() throws InterruptedException {
+	public void wind12UserAbletoCompleteTheOrder() throws InterruptedException {
 
 		String expectedOrderInformation = "Your order on My Store is complete.";
 		new HomePage(this.getDriver(), baseUrl)
