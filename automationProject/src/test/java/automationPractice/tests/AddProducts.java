@@ -2,8 +2,13 @@ package automationPractice.tests;
 
 import org.testng.annotations.Test;
 import automationPractice.foundation.AutomationPracticeTestBase;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import automationPractice.controlExtension.ProductItem;
+import automationPractice.pageObjects.BlouseProductPage;
 import automationPractice.pageObjects.CheckoutPage;
 import automationPractice.pageObjects.HomePage;
 import automationPractice.pageObjects.LoginPage;
@@ -11,6 +16,20 @@ import automationPractice.pageObjects.ProductDetailsPage;
 import automationPractice.pageObjects.WishlistPage;
 
 public class AddProducts extends AutomationPracticeTestBase{
+
+	@Test
+	public void wind14CanclickBlouseProductPage(){
+
+		String expected = "Blouse";
+
+		new HomePage(this.getDriver(),baseUrl)
+		.clickBlouseImageJumpProductPage()
+		.clickAddedProduct();
+
+		String actual = new BlouseProductPage(this.getDriver(),baseUrl ).getBloiseElementIntheCart();
+
+		assertTrue(actual.equals(expected));
+	}
 
 	@Test
 	public void wind16CanAddProductToCart() {
@@ -65,5 +84,25 @@ public class AddProducts extends AutomationPracticeTestBase{
 		int actualQuantity = wishlistPage.getWishlistQuantity();
 
 		Assert.assertTrue(actualQuantity >= expectedQuantity);
+	}
+
+	@Test
+	public void wind33NotAbleToAddToWishlishBeforeLogin() {	  
+		int itemIndex = 1;
+
+		HomePage page = new HomePage(this.getDriver(), this.baseUrl);
+		ProductItem product = page.getProductItem(itemIndex);
+		page.scrollToElement(product.getMappedElement());
+		page.hoverMouseOverElement(product.getMappedElement());
+		String productSubUrl = product.getDetailsPageSubUrl();
+		product.clickMoreButton();
+
+		ProductDetailsPage prodcutDetailsPage = new ProductDetailsPage(this.getDriver(), this.baseUrl, productSubUrl);
+		prodcutDetailsPage.clickAddToWishlist();
+		prodcutDetailsPage.waitToAddToWishlist();
+
+		WebElement addToWishlistError = prodcutDetailsPage.getAddToWishlistError();
+
+		Assert.assertNotEquals(addToWishlistError, null, "Can not find add to wish list error box");
 	}
 }
